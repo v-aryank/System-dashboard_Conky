@@ -5,7 +5,7 @@ A customised lightweight system monitor for Linux that renders overlays directly
 
 <b>Step 1 — Install Conky</b><br>
 <u>bash</u><br>
-<i>sudo apt update<br>
+><i>sudo apt update<br>
 sudo apt install conky-all</i>
 
 The conky-all variant includes all extras including Cairo graphics, Lua scripting, and font rendering support.<br>
@@ -14,17 +14,17 @@ The conky-all variant includes all extras including Cairo graphics, Lua scriptin
 
 <b>Step 2 — Install required fonts</b><br>
 <u>bash</u><br>
-<i>sudo apt install fonts-jetbrains-mono</i><br>
+><i>sudo apt install fonts-jetbrains-mono</i><br>
 
 Also install icon fonts if you want symbols:<br>
 <u>bash</u><br>
-<i>sudo apt install fonts-font-awesome</i><br>
+><i>sudo apt install fonts-font-awesome</i><br>
 
 ---
 
 <b>Step 3 — Download both files attached. Then follow these steps:</b><br>
 <u>bash</u><br>
-<i>mkdir -p ~/.config/conky<br>
+><i>mkdir -p ~/.config/conky<br>
 cp ~/Downloads/conky.conf ~/.config/conky/conky.conf<br>
 cp ~/Downloads/rings.lua ~/.config/conky/rings.lua<br></i>
 
@@ -32,11 +32,11 @@ cp ~/Downloads/rings.lua ~/.config/conky/rings.lua<br></i>
 
 <b>Step 4 — Launch:</b><br>
 <u>bash</u><br>
-<i>conky -c ~/.config/conky/conky.conf &</i><br>
+><i>conky -c ~/.config/conky/conky.conf &</i><br>
 
 <b>If want to kill old conky and re-launch: </b><br>
 <u>bash</u><br>
-<i>pkill conky; sleep 1; conky -c ~/.config/conky/conky.conf &</i><br>
+><i>pkill conky; sleep 1; conky -c ~/.config/conky/conky.conf &</i><br>
 
 ---
 
@@ -65,15 +65,15 @@ Save with Ctrl+O → Enter → Ctrl+X.<br>
 
 <b>Step 2 — Make it executable:</b><br>
 <u>bash</u><br>
-<i>chmod +x ~/.config/autostart/sira-monitor.desktop</i><br>
+><i>chmod +x ~/.config/autostart/sira-monitor.desktop</i><br>
 
 <b>Step 3 — Test it right now without rebooting:</b><br>
 <u>bash</u><br>
-<i>pkill conky; conky -c ~/.config/conky/conky.conf &</i><br>
+><i>pkill conky; conky -c ~/.config/conky/conky.conf &</i><br>
 
 <b>Step 4 — Verify autostart is registered:</b><br>
 <u>bash</u><br>
-<i>ls ~/.config/autostart/</i><br>
+><i>ls ~/.config/autostart/</i><br>
 
 You should see sira-monitor.desktop listed.
 
