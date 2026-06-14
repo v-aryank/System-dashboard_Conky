@@ -48,7 +48,7 @@ Make the program run at autostart, two steps — autostart via .desktop file, an
 nano ~/.config/autostart/sira-monitor.desktop</i><br>
 
 Paste this exactly:<br>
-<u>ini</u><br>
+
 <i>[Desktop Entry]<br>
 Type=Application<br>
 Name=SIRA System Monitor<br>
