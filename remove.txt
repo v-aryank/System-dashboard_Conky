@@ -1,0 +1,47 @@
+If you ever want to stop it from autolaunching, just run:
+bash 
+rm ~/.config/autostart/sira-monitor.desktop
+
+Remove everything in one shot:
+bash
+# Kill running conky
+pkill conky
+
+# Remove conky config and Lua script
+rm -rf ~/.config/conky/
+
+# Remove autostart entry
+rm ~/.config/autostart/sira-monitor.desktop
+
+# Remove fonts (optional, only if you don't use JetBrains Mono elsewhere)
+sudo apt remove --purge fonts-jetbrains-mono fonts-font-awesome -y
+
+# Uninstall conky itself
+sudo apt remove --purge conky-all -y
+sudo apt autoremove -y
+
+Or if you want to remove things one by one:
+bash
+# 1. Stop conky immediately
+pkill conky
+
+# 2. Remove only the dashboard files
+rm ~/.config/conky/conky.conf
+rm ~/.config/conky/rings.lua
+
+# 3. Remove autostart (stops it launching on login)
+rm ~/.config/autostart/sira-monitor.desktop
+
+# 4. Remove conky software
+sudo apt remove --purge conky-all -y
+
+# 5. Clean up unused packages
+sudo apt autoremove -y
+
+Verify everything is gone:
+bash
+# Should return nothing
+pgrep conky
+ls ~/.config/conky/ 2>/dev/null
+ls ~/.config/autostart/sira-monitor.desktop 2>/dev/null
+which conky 2>/dev/null
