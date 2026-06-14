@@ -44,12 +44,12 @@ Make the program run at autostart, two steps — autostart via .desktop file, an
 -
 <b>Step 1 — Create the autostart entry:</b><br>
 <u>bash</u><br>
-<i>mkdir -p ~/.config/autostart<br>
+><i>mkdir -p ~/.config/autostart<br>
 nano ~/.config/autostart/sira-monitor.desktop</i><br>
 
 Paste this exactly:<br>
 
-<i>[Desktop Entry]<br>
+><i>[Desktop Entry]<br>
 Type=Application<br>
 Name=SIRA System Monitor<br>
 Comment=Conky system dashboard<br>
@@ -58,7 +58,7 @@ Hidden=false<br>
 NoDisplay=false<br>
 X-GNOME-Autostart-enabled=true<br></i>
 
-//Use your own desktop adress.<br>
+Use your own desktop address. And you can also use your own project name instead of SIRA.<br>
 Save with Ctrl+O → Enter → Ctrl+X.<br>
 
 ---
